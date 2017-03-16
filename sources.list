@@ -1,0 +1,32 @@
+#------------------------------------------------------------------------------#
+#                            OFFICIAL UBUNTU REPOS                             #
+#------------------------------------------------------------------------------#
+
+
+###### Ubuntu Main Repos
+deb http://us.archive.ubuntu.com/ubuntu/ trusty main restricted universe
+deb-src http://us.archive.ubuntu.com/ubuntu/ trusty main restricted universe #Added by software-properties
+
+###### Ubuntu Update Repos
+deb http://us.archive.ubuntu.com/ubuntu/ trusty-security main restricted universe
+deb-src http://us.archive.ubuntu.com/ubuntu/ trusty-security main restricted universe #Added by software-properties
+deb http://us.archive.ubuntu.com/ubuntu/ trusty-updates main restricted universe
+deb-src http://us.archive.ubuntu.com/ubuntu/ trusty-updates main restricted universe #Added by software-properties
+deb http://us.archive.ubuntu.com/ubuntu/ trusty-proposed main restricted universe
+deb-src http://us.archive.ubuntu.com/ubuntu/ trusty-proposed main restricted universe #Added by software-properties
+deb http://us.archive.ubuntu.com/ubuntu/ trusty-backports main restricted universe
+deb-src http://us.archive.ubuntu.com/ubuntu/ trusty-backports main restricted universe #Added by software-properties
+
+###### Ubuntu Partner Repo
+deb http://archive.canonical.com/ubuntu trusty partner
+deb-src http://archive.canonical.com/ubuntu trusty partner
+
+###### Ubuntu Extras Repo
+deb http://extras.ubuntu.com/ubuntu trusty main
+deb-src http://extras.ubuntu.com/ubuntu trusty main
+
+deb http://llvm.org/apt/trusty/ llvm-toolchain-trusty-3.4 main
+deb-src http://llvm.org/apt/trusty/ llvm-toolchain-trusty-3.4 main
+deb http://www.openprinting.org/download/printdriver/debian/ lsb3.2 contrib
+deb http://download.virtualbox.org/virtualbox/debian trusty contrib
+# deb-src http://download.virtualbox.org/virtualbox/debian trusty contrib
