@@ -6,7 +6,6 @@
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 ZSH_THEME="robbyrussell"
-
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
 
@@ -55,6 +54,7 @@ plugins=(zsh-autosuggestions)
 
 # export PATH="/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
 # export MANPATH="/usr/local/man:$MANPATH"
+export TERM='xterm-256color'
 export PATH="/usr/local/android-studio/bin:$PATH"
 export PATH="/usr/local/wechat:$PATH"
 export PATH="/usr/local/eclipse:$PATH"
@@ -73,7 +73,7 @@ fi
 
 date_stamp=$(date "+%m/%d/%y/ %H:%M")
 machine=$(echo $HOST | awk -F\. '{print $1}')
-cowput="Welcome back, Jiakuan! You're on $machine. It's currently $date_stamp"
+cowput="Welcome back, $whoami! You're on $machine. It's currently $date_stamp"
 echo $cowput | cowsay
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -99,14 +99,6 @@ bindkey '^[ ' autosuggest-accept
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias connect="expressvpn connect"
-alias disconnect="expressvpn disconnect"
-alias wechat="electronic-wechat&"
-alias eclipse="eclipse &"
-alias studio="./studio.h "
-alias nike="ssh jiakuan@nike.cs.uga.edu"
-alias gcc-arm="arm-linux-gnueabi-gcc"
-alias LS="ls"
-alias nongui="cd ~/qemu/bin && qemu-system-x86_64 -m 1024 -enable-kvm -drive if=virtio,file=test.qcow2,cache=none -cdrom ~/ISO/mini.iso -vnc :1 -redir tcp:2222::22"
 alias tmux='tmux -2'
 alias CD='cd'
+alias LS='ls'
