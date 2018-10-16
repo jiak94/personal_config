@@ -73,7 +73,7 @@ fi
 
 date_stamp=$(date "+%m/%d/%y/ %H:%M")
 machine=$(echo $HOST | awk -F\. '{print $1}')
-cowput="Welcome back, $whoami! You're on $machine. It's currently $date_stamp"
+cowput="Welcome back, $(whoami)! You're on $machine. It's currently $date_stamp"
 echo $cowput | cowsay
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
