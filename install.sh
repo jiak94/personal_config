@@ -1,10 +1,10 @@
 sudo apt-get update
-sudo apt-get install zsh, git, curl, vim, tmux, cowsay
+sudo apt-get install zsh git curl vim tmux cowsay
 
 # tmux configure
 cp -r .tmux ~/.
-ln -s -f ~/.tmux/.tmux.conf
-cp ~/.tmux/.tmux.conf.local .
+ln -s -f ~/.tmux/.tmux.conf ~/.
+cp ~/.tmux/.tmux.conf.local ~/.
 
 # change default shell to zsh
 chsh -s $(which zsh)
