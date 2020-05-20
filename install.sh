@@ -1,6 +1,13 @@
 sudo apt-get update
 sudo apt-get install zsh git curl vim tmux cowsay
 
+# install vimplus
+git clone https://github.com/chxuan/vimplus.git ~/.vimplus
+cd ~/.vimplus
+./install.sh
+
+cp vimrc ~/.vimrc
+
 # tmux configure
 cp -r .tmux ~/.
 ln -s -f ~/.tmux/.tmux.conf ~/.
@@ -17,9 +24,3 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 
 cp zshrc ~/.zshrc
 
-# install vimplus
-git clone https://github.com/chxuan/vimplus.git ~/.vimplus
-cd ~/.vimplus
-./install.sh
-
-cp vimrc ~/.vimrc
