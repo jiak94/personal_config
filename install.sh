@@ -2,6 +2,7 @@ sudo apt-get update
 sudo apt-get install zsh git curl vim tmux cowsay
 
 # install vimplus
+cd ~
 git clone https://github.com/chxuan/vimplus.git ~/.vimplus
 cd ~/.vimplus
 ./install.sh
@@ -9,7 +10,8 @@ cd ~/.vimplus
 cp vimrc ~/.vimrc
 
 # tmux configure
-cp -r .tmux ~/.
+cd ~
+git clone https://github.com/gpakosz/.tmux.git
 ln -s -f ~/.tmux/.tmux.conf ~/.
 cp ~/.tmux/.tmux.conf.local ~/.
 
