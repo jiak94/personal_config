@@ -1,18 +1,24 @@
 sudo apt-get update
-sudo apt-get install zsh git curl vim tmux cowsay bat
+sudo apt-get install zsh git curl vim tmux cowsay
+sudo dpkg -i bat.deb
 
 # install vimplus
-cd ~
+pushd ~
 git clone https://github.com/chxuan/vimplus.git ~/.vimplus
-cd ~/.vimplus
+popd
+
+pushd ~/.vimplus
 ./install.sh
+popd
 
 cp vimrc ~/.vimrc
 
 # tmux configure
-cd ~
+pushd ~
 git clone https://github.com/gpakosz/.tmux.git
 ln -s -f ~/.tmux/.tmux.conf ~/.
+popd
+
 cp ~/.tmux/.tmux.conf.local ~/.
 
 # change default shell to zsh
