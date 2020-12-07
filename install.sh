@@ -1,5 +1,5 @@
 sudo apt-get update
-sudo apt-get install zsh git curl vim tmux cowsay
+sudo apt-get install zsh git curl vim tmux cowsay bat
 
 # install vimplus
 cd ~
